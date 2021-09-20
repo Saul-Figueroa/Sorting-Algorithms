@@ -42,14 +42,21 @@ public class BubbleSort {
 	
 	public int[] bubbleSort3(int [] nums) {
 		
+		boolean swapped;
 		int n = nums.length-1;
 		for(int i=n; i>0; i--) {
+			swapped = false;
 			for(int j=n; j>0; j--) {
 				if(nums[j] < nums[j-1]) {
 					int tmp = nums[j];
 					nums[j] = nums[j-1];
 					nums[j-1] = tmp;
+					swapped = true;
 				}
+			}
+			
+			if(swapped == false) {
+				break;
 			}
 		}
 		

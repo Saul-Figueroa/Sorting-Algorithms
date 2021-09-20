@@ -9,7 +9,7 @@ public class Driver {
 		
 		BubbleSort call = new BubbleSort();
 		
-		call.bubbleSort2(nums);
+		call.bubbleSort3(nums);
 		
 		for(int i:nums)
 			System.out.println(i);
